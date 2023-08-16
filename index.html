@@ -25,11 +25,14 @@
           </h1>
         );
       };
-      ReactDOM.render(
+      const ComposableComponentFunction = () => {
         <div>
           <ComponentFunction name="rohith patel appala" greeting="hello" />
           <ComponentFunction name="rohith patel" greeting="hello" />
-        </div>,
+        </div>;
+      };
+      ReactDOM.render(
+        <ComposableComponentFunction />,
         document.getElementById("root")
       );
     </script>
