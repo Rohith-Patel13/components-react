@@ -15,6 +15,7 @@
     <div id="root"></div>
     <script type="text/babel">
       //   Write Your Code Here
+
       const ComponentFunction = (properties) => {
         console.log(properties);
         const { name, greeting } = properties;
@@ -25,7 +26,10 @@
         );
       };
       ReactDOM.render(
-        <ComponentFunction name="rohith patel appala" greeting="hello" />,
+        <div>
+          <ComponentFunction name="rohith patel appala" greeting="hello" />
+          <ComponentFunction name="rohith patel" greeting="hello" />
+        </div>,
         document.getElementById("root")
       );
     </script>
