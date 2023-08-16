@@ -15,12 +15,19 @@
     <div id="root"></div>
     <script type="text/babel">
       //   Write Your Code Here
-      const ComponentFunction = () => {
+      const ComponentFunction = (properties) => {
+        console.log(properties);
+        const { name, greeting } = properties;
         return (
-          <h1 className="greeting">Welcome to components concept in react</h1>
+          <h1 className="greeting">
+            {greeting}, {name}! Welcome to components concept in react
+          </h1>
         );
       };
-      ReactDOM.render(<ComponentFunction />, document.getElementById("root"));
+      ReactDOM.render(
+        <ComponentFunction name="rohith patel appala" greeting="hello" />,
+        document.getElementById("root")
+      );
     </script>
   </body>
 </html>
